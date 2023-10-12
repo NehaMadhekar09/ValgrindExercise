@@ -34,7 +34,7 @@ Solution: Delete the pointer readings and set to nullptr.
 
 
 ## Valgrind Outputs before and after the fix
-Valgrind output before fix: valgrind_output_before_fix.txt
+Valgrind output before fix: valgrind_output_before_fix.txt <br />
 Valgrind output after fix: valgrind_output_after_fix.txt
 
 ## Extra Credit Questions
@@ -42,8 +42,8 @@ Valgrind output after fix: valgrind_output_after_fix.txt
 When the executable is linked statically,valgrid does not detect the exact same bugs. It fails to detect memory leak and shows more than 400 errors for uninitialized variable.
 
 2. Why or why not.
-In case of statically linked executable, valgrind doesn’t detect memory leaks.There should be at least one (even dummy) dynamically linked lib to have the dynamic loader to be invoked in the process. Otherwise valgrind cannot "LD_PRELOAD" some of its own “.so” library, and it could give incorrect results.
-Reference:
+In case of statically linked executable, valgrind doesn’t detect memory leaks.There should be at least one (even dummy) dynamically linked lib to have the dynamic loader to be invoked in the process. Otherwise valgrind cannot "LD_PRELOAD" some of its own “.so” library, and it could give incorrect results. <br />
+Reference:<br />
 https://www.linkedin.com/pulse/how-use-valgrind-detect-memory-errorsan-overview-sanjay-kumar/
 
 
